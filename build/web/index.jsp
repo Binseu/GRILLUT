@@ -14,13 +14,15 @@
 <!--        bootstrap css-->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
          
     </head>
     <body>
         <jsp:include page="header.jsp"/>
         
-        <div class="title container">
+        <div class="title container-fluid">
             <div>
                 <video autoplay muted loop>
                     <source src="css/media/logovideo.mp4" type="video/mp4">
