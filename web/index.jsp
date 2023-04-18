@@ -28,7 +28,7 @@
                     <source src="css/media/logovideo.mp4" type="video/mp4">
                 </video>
                 <div class="title_text">
-                    <h1>GRILLUT<br><span>EXOTIC NA, PINALUPIT PA!</span><div class="d-grid col-5 mx-auto"><a href="login.jsp" class="btn btn-outline-primary btn-lg align-top">LOGIN</a></div></h1>
+                    <h1>GRILLUT<br><span>EXOTIC NA, PINALUPIT PA!</span><div class="d-grid col-5 mx-auto"><a href="login.jsp" class="btn_all btn btn-outline-primary btn-lg align-top">LOGIN</a></div></h1>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
     </div>
     <div class="row px-5 mb-5 d-flex justify-content-center">
 <!--        <a href="login.jsp" class="btn btn-primary btn-lg col-md-5 m-1">LOGIN</a>-->
-        <a href="register.jsp" class=" btn btn-outline-primary btn-lg col-md-5 m-1"style="border-radius: 15px 50px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">REGISTER</a>
+        <a href="register.jsp" class="btn_all btn btn-outline-primary btn-lg col-md-5 m-1">REGISTER</a>
     </div>
     
 </div>
