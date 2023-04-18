@@ -26,15 +26,15 @@
                 <h1 class="text-center border-bottom">SIGN UP</h1>
                   <!-- Name input -->
                   <div class="form-outline mb-2 row">
-                      <div class="col-md-5">
+                      <div class="col-lg-5">
                             <label class="form-label" for="registerFirstName">First Name</label>
                             <input type="text" id="registerFirstName" class="form-control" />
                       </div>
-                      <div class="col-md-5 col-sm-10">
+                      <div class="col-lg-5 col-sm-8">
                             <label class="form-label" for="registerLastName">Last Name</label>
                             <input type="text" id="registerLastName" class="form-control" />
                       </div>
-                      <div class="col-md-2 col-sm-2">
+                      <div class="col-lg-2 col-sm-4">
                             <label class="form-label" for="registerMiddleName">Middle Name</label>
                             <input type="text" id="registerMiddleName" class="form-control" />
                       </div>

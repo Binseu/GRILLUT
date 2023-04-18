@@ -9807,13 +9807,21 @@ textarea.form-control-lg {
   line-height: 0.5em; }
 
 .login {
-  height: 100vh;
   text-align: center;
-  color: #d64000; }
+  color: #d64000;
+  padding-top: 100px;
+  height: 100vh; }
 
 .register {
-  padding-top: 50px; }
+  padding-top: 50px;
+  height: 100vh; }
 
+@media only screen and (max-width: 766px) {
+  .register {
+    height: auto; } }
+@media only screen and (max-height: 450px) {
+  .login {
+    height: auto; } }
 @keyframes spin {
   from {
     transform: rotate(0deg); }
