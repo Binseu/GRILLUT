@@ -9821,6 +9821,9 @@ textarea.form-control-lg {
     height: auto; } }
 @media only screen and (max-height: 450px) {
   .login {
+    height: auto; }
+
+  .register {
     height: auto; } }
 @keyframes spin {
   from {
