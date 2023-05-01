@@ -56,20 +56,20 @@
                 <!-- Password input -->
                 <div class="form-outline mb-2">
                     <label class="form-label" for="registerPassword">Password</label>
-                    <input type="password" id="registerPassword" class="form-control" />
+                    <input type="password" id="registerPassword" class="form-control" placeholder="Type your password" required />
                 </div>
 
                 <!-- Repeat Password input -->
                 <div class="form-outline mb-2">
                     <label class="form-label" for="registerRepeatPassword">Repeat password</label>
-                    <input type="password" id="registerRepeatPassword" class="form-control" />
+                    <input type="password" id="registerRepeatPassword" class="form-control" placeholder="Repeat your password" required />
 
                 </div>
 
                 <!-- Address input -->
                 <div class="form-outline mb-2">
                     <label class="form-label" for="registerAddress">Complete Address</label>
-                    <input type="address" id="registerAddress" class="form-control"/>
+                    <input type="address" id="registerAddress" class="form-control" placeholder="Type your address" required/>
 
                 </div>
 
@@ -77,11 +77,11 @@
                 <div class="form-outline mb-2 row">
                     <div class="col-6">
                         <label class="form-label" for="registerBirthday">Birthday</label>
-                        <input type="date" id="registerBrithday" class="form-control"/>
+                        <input type="date" id="registerBrithday" class="form-control" required/>
                     </div>
                     <div class="col-6">
                         <label class="form-label" for="registerNumber">Mobile Number</label>
-                        <input type="number" id="registerNumber" class="form-control"/>
+                        <input type="number" id="registerNumber" class="form-control" placeholder="11-digit numbers only." required/>
                     </div>
 
 
@@ -139,7 +139,26 @@
                         alert("Username will not accept characters beyond 12.");
                         return false;
                     }
-
+                  
+                    $(document).ready(function() {
+                    $("#registerAddress").on("input", function() {
+                        var inputVal = $(this).val();
+                        var regex = /^[a-zA-Z0-9\s]+$/;
+                    if(!regex.test(inputVal)) {
+                    $(this).val(inputVal.replace(/[^a-zA-Z0-9\s]/g, ''));
+                    }
+                    });
+                    });
+                  
+                    var registerNumber = $("#registerNumber").val();
+                    console.log("Number: " + registerNumber);
+                    if (registerNumber.length !== 11) {
+                        alert("Number must be 11 digits only.");
+                        return false;
+                    } else if (isNaN(registerNumber)) {
+                        alert("Number must be numeric.");
+                        return false;
+                    }
                     // Input fields validated
                     alert("Success!");
                     return true;
