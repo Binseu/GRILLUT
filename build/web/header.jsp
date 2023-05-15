@@ -14,7 +14,6 @@
       <ul class="nav me-auto ms-0 mb-2 mb-lg-0">
         <li class="nav_link"><a href="index.jsp" class="nav-link nav_link px-2 text-decoration-none">HOME</a></li>
         <li class="nav_link"><a href="products.jsp" class="nav-link nav_link px-2 text-decoration-none">PRODUCTS</a></li>
-        <li class="nav_link"><a href="#" class="nav-link nav_link px-2 disabled text-decoration-none">CART</a></li>
       </ul>
        
       <form class="d-flex" role="search">
