@@ -56,14 +56,6 @@
                         </tr>
                     </thead>
                     <tbody id='productList' class="mb-3" style='height: 25vh;'>
-                        <tr>
-                            <td>$(#PID)</td>
-                            <td>Product Name</td>
-                            <td>Description</td>
-                            <td>Size</td>
-                            <td>Price</td>
-                            <td>Quantity</td>
-                        </tr>
                         <!-- Add table rows dynamically using JavaScript or server-side code -->
                     </tbody>
                 </table>
