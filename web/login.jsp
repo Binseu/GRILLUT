@@ -21,7 +21,6 @@
          
     </head>
     <body>
-        <jsp:include page="header.jsp"/>
         
         <section class="d-flex login container-sm justify-content-center align-items-center col-md-6">
             <form class="col-8">
@@ -43,22 +42,15 @@
                 <!-- 2 column grid layout for inline styling -->
                 <div class="row mb-4">
                   <div class="col d-flex justify-content-center">
-                    <!-- Checkbox -->
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="remember_me" checked />
-                      <label class="remember_me" for="form2Example31"> Remember me </label>
-                    </div>
                   </div>
 
                   <div class="col">
-                    <!-- Simple link -->
-                    <a href="#!">Forgot Password?</a>
                   </div>
                 </div>
                 </fieldset>
 
                 <!-- Submit button -->
-                <button type="button" class="btn btn-primary btn-block mb-4 col-12 disabled">LOGIN</button>
+                <button type="button" class="btn btn-primary btn-block mb-4 col-12">LOGIN</button>
 
                 <!-- Register buttons -->
                 <div class="text-center">

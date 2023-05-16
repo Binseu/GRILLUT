@@ -26,6 +26,6 @@
         <jsp:include page="header.jsp"/>
         <jsp:include page="prdform.jsp"/>
         <jsp:include page="footer.jsp"/>
-        < script src = "js/bootstrap.bundle.min.js" ></script>
+        <script src = "js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>
