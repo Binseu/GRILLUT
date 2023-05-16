@@ -34,15 +34,15 @@
                 <div class="form-outline mb-2 row">
                     <div class="col-lg-5">
                         <label class="form-label" for="registerFirstName">First Name</label>
-                        <input type="text" id="registerFirstName" class="form-control" placeholder="Characters only, min. of  1." required/>
+                        <input type="text" id="registerFirstName" class="form-control" placeholder="Characters only, min. of  1" required/>
                     </div>
                     <div class="col-lg-5 col-sm-8">
                         <label class="form-label" for="registerLastName">Last Name</label>
-                        <input type="text" id="registerLastName" class="form-control" placeholder="Characters only, min. of  2." required/>
+                        <input type="text" id="registerLastName" class="form-control" placeholder="Characters only, min. of  2" required/>
                     </div>
                     <div class="col-lg-2 col-sm-4">
                         <label class="form-label" for="registerMiddleName">Middle Name</label>
-                        <input type="text" id="registerMiddleName" class="form-control" placeholder="Characters only."/>
+                        <input type="text" id="registerMiddleName" class="form-control" placeholder="Characters only"/>
                     </div>
 
                 </div>
@@ -50,7 +50,7 @@
                 <!-- Username input -->
                 <div class="form-outline mb-2">
                     <label class="form-label" for="registerUsername">Username</label>
-                    <input type="text" id="registerUsername" class="form-control" placeholder="Minimum of 4, maximum of 12." required/>
+                    <input type="text" id="registerUsername" class="form-control" placeholder="Minimum of 4, maximum of 12" required/>
                 </div>
 
                 <!-- Password input -->

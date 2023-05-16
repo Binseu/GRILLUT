@@ -26,7 +26,7 @@
         <section class="d-flex login container-sm justify-content-center align-items-center col-md-6">
             <form class="col-8">
                 <h1 class="text-center border-bottom">LOGIN</h1>
-                <fieldset disabled>
+                <fieldset>
                 <!-- Email input -->
                 <div class="form-outline mb-4">
                   <label class="form-label h6" for="login_user">USERNAME</label>
