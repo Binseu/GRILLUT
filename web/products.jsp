@@ -56,6 +56,14 @@
                         </tr>
                     </thead>
                     <tbody id='productList' class="mb-3" style='height: 25vh;'>
+                        <tr>
+                            <td>${productID}</td>
+                            <td>${productName}</td>
+                            <td>${productDescription}</td>
+                            <td>${productSize}</td>
+                            <td>${productPrice}</td>
+                            <td>${productQuantity}</td>
+                        </tr>
                         <!-- Add table rows dynamically using JavaScript or server-side code -->
                     </tbody>
                 </table>
@@ -67,13 +75,16 @@
         <div class="modal fade" id="prdformModal" tabindex="-1" aria-labelledby="prdformModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
+                    
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="prdformModalLabel">Product Form</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    
                     <div class="modal-body">
                         <jsp:include page="prdform.jsp"/>
                     </div>
+                    
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary">Save</button>
