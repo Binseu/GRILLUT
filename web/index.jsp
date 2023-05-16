@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : Apr 10, 2023, 8:06:53 PM
+    Document   : login
+    Created on : Apr 11, 2023, 6:34:16 PM
     Author     : Matic
 --%>
 
@@ -17,36 +17,50 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <!--        jquery-->
+        <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.6.4.min.js"></script>
+        
          
     </head>
-    <body
+    <body>
         
-        <div class="title container-fluid">
-            <div>
-                <video autoplay muted loop>
-                    <source src="css/media/logovideo.mp4" type="video/mp4">
-                </video>
-                <div class="title_text">
-                    <h1>GRILLUT<br><span>EXOTIC NA, PINALUPIT PA!</span><div class="d-grid col-5 mx-auto"><a href="login.jsp" class="btn_all btn btn-outline-primary btn-lg align-top">LOGIN</a></div></h1>
+        <section class="d-flex login container-sm justify-content-center align-items-center col-md-6">
+            <form class="col-8" method="post" action="${pageContext.request.contextPath}/home">
+                <h1 class="text-center border-bottom">LOGIN</h1>
+                <fieldset>
+                <!-- Email input -->
+                <div class="form-outline mb-2">
+                  <label class="form-label h6" for="login_user">USERNAME</label>
+                  <input type="text" id="login_user" class="form-control" placeholder="Username" required="True">
+                  
                 </div>
-            </div>
-        </div>
-        
-<!--        Sign-in/Register btn-->
 
-<div class="container-sm">
-    <div class="col-12 d-flex justify-content-center my-5">
-        <img class="mx-auto spinning" style="height: 10em;" src="css\media\balut.png""/>
-    </div>
-    <div class="landing_invite col-12 text-primary text-center">
-        <p style="font-size: 1.8em; line-height: 1em;">REGISTER AND HELP GRILLUT TO FIND ITS TOPPINGS!</p>
-    </div>
-    <div class="row px-5 mb-5 d-flex justify-content-center">
-<!--        <a href="login.jsp" class="btn btn-primary btn-lg col-md-5 m-1">LOGIN</a>-->
-        <a href="register.jsp" class="btn_all btn btn-outline-primary btn-lg col-md-5 m-1">REGISTER</a>
-    </div>
-    
-</div>
+                <!-- Password input -->
+                <div class="form-outline">
+                  <label class="form-label h6" for="login_password">PASSWORD</label>
+                  <input type="password" id="login_password" class="form-control"  placeholder="Password" required="True">
+                </div>
+
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+                  </div>
+
+                  <div class="col">
+                  </div>
+                </div>
+                </fieldset>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4 col-12">LOGIN</button>
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>Don't have an account? <a href="register.jsp">REGISTER</a></p>
+                </div>
+            </form>
+            
+        </section>
         
         <jsp:include page="footer.jsp"/>
         <script src="js/bootstrap.bundle.min.js"></script>

@@ -1185,7 +1185,7 @@ progress {
 
   .col-lg-2 {
     flex: 0 0 auto;
-    width: 28.66666667%; }
+    width: 16.66666667%; }
 
   .col-lg-3 {
     flex: 0 0 auto;
@@ -1197,7 +1197,7 @@ progress {
 
   .col-lg-5 {
     flex: 0 0 auto;
-    width: 35.66666667%; }
+    width: 41.66666667%; }
 
   .col-lg-6 {
     flex: 0 0 auto;
@@ -9724,7 +9724,8 @@ textarea.form-control-lg {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Archivo Black' , sans-serif; }
+  font-family: 'Archivo Black' , sans-serif;
+  scroll-behavior: smooth; }
 
 .title {
   position: relative;
@@ -9809,11 +9810,9 @@ textarea.form-control-lg {
 .login {
   text-align: center;
   color: #d64000;
-  padding-top: 100px;
   height: 100vh; }
 
 .register {
-  padding-top: 50px;
   height: 100vh; }
 
 @media only screen and (max-width: 766px) {

@@ -23,9 +23,7 @@
 
     </head>
     <body>
-        <jsp:include page="header.jsp"/>
-
-        <section class="d-flex register container-sm justify-content-center align-items-center px-md-5 col-md-9 mt-5">
+        <section class="d-flex register container-sm justify-content-center align-items-center px-md-5 col-md-9">
 
             <form class="container" method="post" onsubmit="return formValidation()"> 
                 <h1 class="text-center border-bottom">SIGN UP</h1>
@@ -88,18 +86,13 @@
                 </div>
 
 
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-3 col-12 mt-3">REGISTER</button>
 
-                <!-- Checkbox -->
-                <div class="form-check d-flex justify-content-center mb-4">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
-                           aria-describedby="registerCheckHelpText" />
-                    <label class="form-check-label" for="registerCheck">
-                        I have read and agree to the terms
-                    </label>
+                <div class="text-center">
+                    <p>Already have an account? <a href="index.jsp">LOGIN</a></p>
                 </div>
 
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-3 col-12">REGISTER</button>
             </form>
 
             <script>
@@ -139,17 +132,17 @@
                         alert("Username will not accept characters beyond 12.");
                         return false;
                     }
-                  
-                    $(document).ready(function() {
-                    $("#registerAddress").on("input", function() {
-                        var inputVal = $(this).val();
-                        var regex = /^[a-zA-Z0-9\s]+$/;
-                    if(!regex.test(inputVal)) {
-                    $(this).val(inputVal.replace(/[^a-zA-Z0-9\s]/g, ''));
-                    }
+
+                    $(document).ready(function () {
+                        $("#registerAddress").on("input", function () {
+                            var inputVal = $(this).val();
+                            var regex = /^[a-zA-Z0-9\s]+$/;
+                            if (!regex.test(inputVal)) {
+                                $(this).val(inputVal.replace(/[^a-zA-Z0-9\s]/g, ''));
+                            }
+                        });
                     });
-                    });
-                  
+
                     var registerNumber = $("#registerNumber").val();
                     console.log("Number: " + registerNumber);
                     if (registerNumber.length !== 11) {

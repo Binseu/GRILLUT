@@ -17,6 +17,7 @@ $theme-colors: (
   margin:  0;
   box-sizing: border-box;
   font-family:'Archivo Black' , sans-serif;
+  scroll-behavior: smooth;
 }
 
 
@@ -119,12 +120,10 @@ $theme-colors: (
 .login{
     text-align: center;
     color: #d64000;
-    padding-top: 100px;
     height: 100vh;
 }
 
 .register{
-    padding-top: 50px;
     height: 100vh;
 }
 
