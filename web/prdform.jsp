@@ -1,17 +1,17 @@
-<section class="d-flex register container-sm justify-content-center align-items-center px-md-5 col-md-9 mt-5">
+<section class="d-flex container justify-content-center align-items-center">
 
-    <form class="container" method="post" onsubmit="return formValidation()">
-        <h1 class="text-center border-bottom">Products Form</h1>
+    <form class="container" method="post" onsubmit="return formValidation()" action="${pageContext.request.contextPath}/products">
+        <!--        <h1 class="text-center border-bottom">Products Form</h1>-->
 
         <!-- form input -->
         <div class="form-outline mb-2 row">
             <div class="">
                 <label class="form-label" for="PID">Product ID</label>
-                <input type="number" id="PID" class="form-control" placeholder="Must be greater than 0" required/>
+                <input type="number" id="PID" class="form-control" placeholder="Must be greater than 0" name="productID" required/>
             </div>
             <div class="">
                 <label class="form-label" for="PN">Product Name</label>
-                <input type="text" id="PN" class="form-control" placeholder="Characters only, min. of 3" required/>
+                <input type="text" id="PN" class="form-control" placeholder="Characters only, min. of 3" name='productName' required/>
             </div>
             <div class="">
                 <label class="form-label" for="DSCRP">Description</label>
@@ -32,7 +32,7 @@
         </div>
 
         <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-3 col-12">Save</button>
+        <!--        <button type="submit" class="btn btn-primary btn-block mb-3 col-12">Save</button>-->
 
         <script>
             var charactersonly = /^[A-Za-z]+$/;
