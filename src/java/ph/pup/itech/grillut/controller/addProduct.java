@@ -30,14 +30,15 @@ public class addProduct extends HttpServlet {
         request.setAttribute("productSize", productSize);
         request.setAttribute("productPrice", productPrice);
         request.setAttribute("productQuantity", productQuantity);
-        
 
         System.out.println(productName + " with " + productID + " has been added to inventory.");
 
         RequestDispatcher rd = getServletContext().getRequestDispatcher("/products.jsp");
         rd.forward(request, response);
-
-
+        
+        request.setAttribute("productAdded", true);
+        
+        
 //        response.getWriter().println(productName + " with " + productID + " has been added to inventory.");
     }
 
